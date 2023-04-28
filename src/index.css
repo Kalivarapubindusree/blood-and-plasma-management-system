@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-slideshow-image/dist/styles.css";
+
+@layer utilities {
+  .app-color {
+    background-color: #c13037;
+  }
+  .logo-color {
+    color: #a62121;
+  }
+  .navheader-btn {
+    @apply py-2 px-8 app-color text-white border rounded-full font-semibold;
+  }
+  .contact-border {
+    border-top: 3px solid #c13037;
+    border-bottom: 3px solid #c13037;
+    padding: 3px;
+  }
+  .list-item-border {
+    border-right: 2px solid white;
+  }
+  .nav-list-item-style {
+    @apply list-item-border px-8 font-medium  cursor-pointer;
+  }
+  .register-input-border {
+    border: 3px solid #a62121;
+  }
+  .bloodbank-input-border {
+    border: 3px solid #dfdedf;
+  }
+  .sign-in-page-length {
+    height: 70vh;
+  }
+  .sign-in-page-border {
+    border: 2px solid grey;
+    box-shadow: 15px -15px #c9c8c9;
+  }
+  .signinpage-input-bottom {
+    border-bottom: 2px solid #c13037;
+  }
+  .totals-front > div {
+    background-color: #344158;
+  }
+  .donors-front {
+    border: 20px solid #c13037;
+  }
+
+  /* slide show */
+
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  /* slide show */
+
+  .testimonial > div {
+    background-color: #344158;
+  }
+  .footer-top {
+    background-color: #c13037;
+  }
+  .footer-top {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+
+  .add-bloodbank {
+    border-bottom: 4px solid #e8d5db;
+    border-left: 5px solid #b5818e;
+  }
+  .all-bloodbanks {
+    border: 3px solid #e8d5db;
+  }
+  .bank-item > div:nth-child(1) {
+    border-right: 2px solid #e8d5db;
+  }
+  .events-bordertop{
+    border-top: 3px solid #e8d5db
+  }
+
+
+
+
+  .pin1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -115px;
+    
+    border-radius: 50% 50% 50% 0;
+    border: 4px solid #fff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+  }
+  
+  .pin1::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    background-color: #c13037;
+  }
+  
+  
+}
